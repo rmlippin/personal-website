@@ -7,6 +7,8 @@ body {
   margin-bottom: 100px;
 }
 
+
+/* Footer */
 #footer {
   position: absolute;
   bottom: 0;
@@ -23,60 +25,109 @@ body {
   padding-left: 0px;
 }
 #footer ul li {
-  display: inline; padding: 20px;
+  display: inline;
+  padding: 10px;
+}
+@media (max-width: 400px) {
+  #footer ul li {
+    display: inline;
+    padding: 7px;
+  }
 }
 
-#header ul li {
+
+/* Header and Nav Bar */
+#header {
+  background-color: #f7f7f7;
+}
+.navbar {
+  background-color: #f7f7f7;
+}
+@media (min-width: 500px) {
+  .navbar {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+}
+#header ul {
   font-size: 80%;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
-
+.navbar-brand,
+.navbar-nav li a {
+  line-height: 80px;
+  height: 80px;
+  padding-top: 0;
+}
+.navbar-nav {
+  /*margin-right: 40px;*/
+}
 .navbar-brand {
-  font-size: 100%;
   display: inline;
   font-family: 'Montserrat', sans-serif;
-  letter-spacing: 0.2em;
-  font-size: 130%;
-  text-transform: uppercase;
-}
-
-.tree-icon {
-    color: #00b49d;
-}
-
-/*#header h1 {
-  display: inline;
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.3em;
   font-size: 100%;
   text-transform: uppercase;
-}*/
+  color: #4c4c4c;
+  /*margin-left: 40px;*/
+}
+@media (max-width: 500px) {
+    .navbar-brand-text-long {
+        display: none;
+    }
+}
+@media (min-width: 500px) {
+    .navbar-brand-text-short {
+        display: none;
+    }
+}
 
-.fa {
+
+/*Carousel*/
+.carousel-inner{
+  width:100%;
+  max-height: 550px !important;
+}
+.carousel-caption{
+  transform: translateY(-50%);
+  bottom: 0;
+  top: 50%;
+}
+
+/* Icons */
+.fa-tree {
+    color: #4c4c4c;
+}
+.fab {
   color: white;
 }
-
 .fa-github:hover {
   color: #DBB8FF;
 }
-
 .fa-linkedin:hover {
   color: #B8E3FF;
 }
-
 .fa-instagram:hover {
   color: #FFFBB8;
 }
-
 .fa-pinterest:hover {
   color: #FFB8B8;
 }
-
 .fa-spotify:hover {
   color: #B8FFC6;
 }
+
+
+/* If screen is big enough, add margin */
+@media (min-width: 500px) {
+  .navbar {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+}
+
 
 .container {
   width: auto;
