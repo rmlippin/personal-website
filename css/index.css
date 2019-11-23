@@ -12,7 +12,6 @@ body {
 }
 
 
-
 /* Footer */
 #footer {
   position: absolute;
@@ -126,6 +125,9 @@ body {
 .carousel > .carousel-inner > .carousel-item > .carousel-caption > h5 {
   font-size: 3em;
 }
+.carousel > .carousel-inner > .carousel-item > .carousel-caption > h5 > a {
+  color: white;
+}
 .carousel > .carousel-inner > .carousel-item > .carousel-caption > h6 {
   font-size: 1em;
 }
@@ -177,7 +179,7 @@ body {
 }
 
 
-/* About Met */
+/* About Me */
 .about {
   padding-top: 60px;
   padding-bottom: 40px;
@@ -190,8 +192,68 @@ body {
   font-size: 15px;
 }
 .about h9 {
-  font-size: 30px;
+  letter-spacing: 0.2em;
+  font-size: 24px;
+  font-weight: bold;
+  color: #13856b;
 }
+
+/* Blog */
+.blog {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.post-preview > a {
+  color: #7d7d7d;
+}
+
+.post-preview > a:hover {
+  color: #7d7d7d;
+  text-decoration: none;
+}
+
+.post-preview > a > .post-title {
+  font-size: 32px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.post-preview > a > .post-title:hover {
+  font-size: 32px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #005e45;
+}
+
+.post-preview > a > .post-subtitle {
+  font-size: 24px;
+  margin: 0 0 10px;
+}
+
+.post-preview > .post-meta {
+  font-size: 16px;
+  font-style: italic;
+  margin-top: 0;
+  color: #868e96;
+}
+
+.post-preview > .post-meta > a {
+  text-decoration: none;
+  color: #212529;
+}
+
+.post-preview > .post-meta > a:focus, .post-preview > .post-meta > a:hover {
+  text-decoration: underline;
+  color: #0085A1;
+}
+
 
 
 
@@ -203,6 +265,10 @@ body {
   color: #4c4c4c;
 }
 .fab {
+  transition: .7s ease;
+  color: white;
+}
+.fas {
   transition: .7s ease;
   color: white;
 }
@@ -223,6 +289,11 @@ body {
   color: #FFB8B8;
 }
 .fa-spotify:hover {
+  transition: .7s ease;
+  color: #B8FFC6;
+}
+
+.fa-envelope-square:hover {
   transition: .7s ease;
   color: #B8FFC6;
 }
